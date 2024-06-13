@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Partner Registration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo-header">
+            <img src="./assets/apc.png" alt="Assetplus Consulting" class="logo">
+            <h1>PNG - Suvidha</h1>
+            <img src="./assets/bpcl.jpg" alt="Bharat Petroleum" class="logo">
+        </div>
+        <nav class="sidebar">
+            <ul class="components">
+                <li><a href="#">Dashboard</a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle">Consumer Registration <span class="arrow">&#9660;</span></a>
+                    <ul>
+                        <li><a href="#">submenu1</a></li>
+                        <li><a href="#">submenu2</a></li>
+                        <li><a href="#">submenu3</a></li>
+                        <li><a href="#">submenu4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle">Consumer Installation Verification <span class="arrow">&#9660;</span></a>
+                    <ul>
+                        <li><a href="#">submenu1</a></li>
+                        <li><a href="#">submenu2</a></li>
+                        <li><a href="#">submenu3</a></li>
+                        <li><a href="#">submenu4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle">Consumer Billing - SMS OCR<span class="arrow">&#9660;</span></a>
+                    <ul>
+                        <li><a href="#">submenu1</a></li>
+                        <li><a href="#">submenu2</a></li>
+                        <li><a href="#">submenu3</a></li>
+                        <li><a href="#">submenu4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle">Consumer Billing - Meter Reader<span class="arrow">&#9660;</span></a>
+                    <ul class="collapse list-unstyled" id="consumerRegistrationSubmenu">
+                        <li><a href="#">submenu1</a></li>
+                        <li><a href="#">submenu2</a></li>
+                        <li><a href="#">submenu3</a></li>
+                        <li><a href="#">submenu4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle">Master<span class="arrow">&#9660;</span></a>
+                    <ul>
+                        <li><a href="#">submenu1</a></li>
+                        <li><a href="#">submenu2</a></li>
+                        <li><a href="#">submenu3</a></li>
+                        <li><a href="#">submenu4</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#" class="dropdown-toggle">Reports <span class="arrow">&#9660;</span></a>
+                    <ul>
+                        <li><a href="#">BP Registration</a></li>
+                        <li><a href="#">Active Connection</a></li>
+                        <li><a href="#">Billing</a></li>
+                        <li><a href="#">Payment</a></li>
+                        <li><a href="#">Collections</a></li>
+                        <li><a href="#">SMS Delivery</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <header>
+                <div class="header-title">
+                    <h2>Business Partner Registration</h2>
+                </div>
+            </header>
+            <div class="register">
+             <form id="registrationForm">
+                <!-- Form fields -->
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="middleName">Middle Name</label>
+                        <input type="text" id="middleName" name="middleName">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="fathersName">Father's Name</label>
+                        <input type="text" id="fathersName" name="fathersName" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="mobile">Mobile</label>
+                        <input type="tel" id="mobile" name="mobile" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="aadhar">Aadhar Card Number</label>
+                        <input type="text" id="aadhar" name="aadhar" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="area">Area</label>
+                        <input type="text" id="area" name="area" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="society">Society</label>
+                        <input type="text" id="society" name="society" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="houseNo">House No.</label>
+                        <input type="text" id="houseNo" name="houseNo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="landmark">Landmark</label>
+                        <input type="text" id="landmark" name="landmark" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pincode">Pincode</label>
+                        <input type="text" id="pincode" name="pincode" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="paymentMode">Payment Mode</label>
+                        <select id="paymentMode" name="paymentMode" required>
+                            <option value="">Select Payment mode</option>
+                            <option value="Credit Card">Credit Card</option>
+                            <option value="Debit Card">Debit Card</option>
+                            <option value="Net Banking">Net Banking</option>
+                            <option value="UPI">UPI</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="idProofType">ID Proof Type</label>
+                        <select id="idProofType" name="idProofType" required>
+                            <option value="">Select ID proof type</option>
+                            <option value="Aadhar">Aadhar</option>
+                            <option value="Passport">Passport</option>
+                            <option value="Driving License">Driving License</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="idProof">ID Proof</label>
+                        <input type="file" id="idProof" name="idProof" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="addressProofType">Address Proof Type</label>
+                        <select id="addressProofType" name="addressProofType" required>
+                            <option value="">Select Address proof type</option>
+                            <option value="Aadhar">Aadhar</option>
+                            <option value="Passport">Passport</option>
+                            <option value="Driving License">Driving License</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="addressProof">Address Proof</label>
+                        <input type="file" id="addressProof" name="addressProof" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Register</button>
+                </div>
+             </form>
+            </div>
+            <footer>
+                <div class="footer-bar">
+                    <p>All Rights Reserved by ATGPUG. Designed and Developed by <a href="#">Assetplus Consulting</a>.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="scripts.js"></script>
+</body>
+</html>
